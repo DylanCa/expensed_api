@@ -1,6 +1,6 @@
 from rest_framework import viewsets, permissions
 
-from api.models.expense import Expense, PaymentType, Category, Merchant
+from api.models import Expense, PaymentType, Category, Merchant
 from api.serializers.expense_serializer import ExpenseSerializer, PaymentTypeSerializer, CategorySerializer, \
     MerchantSerializer
 

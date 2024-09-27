@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from api.models.expense import Household
+from api.models import Household
 
 class HouseholdSerializer(serializers.ModelSerializer):
     class Meta:

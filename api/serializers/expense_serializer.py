@@ -1,7 +1,6 @@
 from rest_framework import serializers
 
-from api.models.expense import Expense, PaymentType, Category, Merchant
-from api.models.household import Household
+from api.models import Expense, PaymentType, Category, Merchant, Household
 
 class ExpenseSerializer(serializers.ModelSerializer):
     class Meta:

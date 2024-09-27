@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'api.User'
 
 # Application definition
 
@@ -39,8 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "api.apps.ApiConfig",
     "rest_framework",
-    "corsheaders"
-
+    "corsheaders",
 ]
 
 MIDDLEWARE = [

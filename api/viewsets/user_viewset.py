@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from api.models.expense import User
+from api.models import User
 from api.serializers.user_serializer import UserSerializer
 
 class UserViewSet(viewsets.ModelViewSet):

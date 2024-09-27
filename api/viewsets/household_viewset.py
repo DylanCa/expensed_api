@@ -1,6 +1,6 @@
 from rest_framework import viewsets, permissions
 
-from api.models.household import Household
+from api.models import Household
 from api.serializers.household_serializer import HouseholdSerializer
 
 

@@ -18,7 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework_nested import routers
 
-from api.viewsets.expense_viewset import ExpenseViewSet, PaymentTypeViewSet, CategoryViewSet, MerchantViewSet
+from api.viewsets.expense_viewset import ExpenseViewSet
+from api.viewsets.payment_viewset import PaymentTypeViewSet
+from api.viewsets.merchant_viewset import MerchantViewSet
+from api.viewsets.category_viewset import CategoryViewSet
 from api.viewsets.household_viewset import HouseholdViewSet
 from api.viewsets.user_viewset import UserViewSet
 

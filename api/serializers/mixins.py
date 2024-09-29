@@ -7,7 +7,7 @@ class HouseholdSerializerMixin(serializers.ModelSerializer):
     def validate(self, attrs):
         attrs = super().validate(attrs)
         attrs = self.validate_household(attrs)
-        attrs = self.validate_user(attrs)
+        attrs = self.validate_owner(attrs)
 
         return attrs
 
@@ -17,7 +17,7 @@ class HouseholdSerializerMixin(serializers.ModelSerializer):
 
         return attrs
 
-    def validate_user(self, attrs):
+    def validate_owner(self, attrs):
         user = self.get_user()
         attrs["user"] = user
 

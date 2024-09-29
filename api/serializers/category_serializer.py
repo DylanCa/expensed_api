@@ -12,3 +12,4 @@ class CategorySerializer(HouseholdSerializerMixin):
     class Meta:
         model = Category
         fields = '__all__'
+        read_only_fields = ['user', 'household']

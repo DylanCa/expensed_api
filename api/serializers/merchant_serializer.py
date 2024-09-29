@@ -12,5 +12,5 @@ class MerchantSerializer(HouseholdSerializerMixin):
     class Meta:
         model = Merchant
         fields = '__all__'
-
+        read_only_fields = ['user', 'household']
 

@@ -12,3 +12,4 @@ class PaymentTypeSerializer(HouseholdSerializerMixin):
     class Meta:
         model = PaymentType
         fields = '__all__'
+        read_only_fields = ['user', 'household']

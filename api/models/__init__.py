@@ -4,3 +4,4 @@ from .category import Category
 from .merchant import Merchant
 from .payment_type import PaymentType
 from .expense import Expense
+from .comment import Comment
